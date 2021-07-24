@@ -123,20 +123,20 @@ function AlbumDetail() {
         <div className="w-screen h-screen flex">
             <div className="w-1/3">
                 <img src={album.image} alt="" />
-                <h3 className="text-3xl text-center">{album.name}</h3>
+                <h3 className="text-base sm:text-3xl text-center mb-2">{album.name}</h3>
                 <div className="flex justify-center">
                     {isFavorite === true ? (
                         <button onClick={removeFromFavorites}
-                            className="bg-red-500"
+                            className="bg-red-500 rounded-xl text-base sm:text-2xl p-2"
                         >Remove From Favorites</button>
                     ) : (
                         <button onClick={addToFavorites}
-                            className="bg-green-500"
+                            className="bg-green-500 rounded-xl text-base sm:text-2xl p-2"
                         >Add To Favorites</button>
                     )}
                 </div>
                 <div className="mt-2 flex justify-center">
-                    <Link to="/" className="bg-red-500 text-xl rounded-xl m-2 p-2">Back</Link>
+                    <Link to="/" className="bg-red-500 text-base sm:text-xl rounded-xl m-2 p-2">Back</Link>
                 </div>
                 
             </div>

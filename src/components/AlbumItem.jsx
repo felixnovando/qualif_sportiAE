@@ -7,8 +7,8 @@ function AlbumItem({album, artistName}) {
         <Link to={`/album/${album.id}`} className="border-2">
             <img src={album.image} alt="" className="w-full"/>
             <div className="flex flex-col items-center w-full">
-                <h3 className="text-3xl">{album.name}</h3>
-                <p className="text-2xl">{artistName}</p>
+                <h3 className="text-base sm:text-3xl">{album.name}</h3>
+                <p className="text-base  sm:text-2xl">{artistName}</p>
             </div>
         </Link>
     )

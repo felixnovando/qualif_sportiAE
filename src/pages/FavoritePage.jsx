@@ -19,8 +19,9 @@ function FavoritePage() {
 
     return (
         <div className="h-screen flex flex-col">
-            <div className="h-1/6 flex items-center justify-center">
-                <Link to="/" className="bg-red-500 text-3xl rounded-xl m-2 p-2">Back</Link>
+            <div className="h-1/6 flex flex-col items-center justify-center">
+                <p className="text-4xl">Favorites Album</p>
+                <Link to="/" className="bg-red-500 text-base sm:text-3xl rounded-xl m-2 p-2">Back</Link>
             </div>
             <div className="overflow-y-auto">
                 <div className="grid grid-flow-row grid-cols-3 gap-3">
